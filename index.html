@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menú</h2>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Actividades</a></li>
+      <li><a href="#">Pagos</a></li>
+      <li><a href="#">Reportes</a></li>
+      <li><a href="#">Administración</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Panel de Administración</h1>
+
+    <div class="panel">
+      <h2>Control de Roles</h2>
+      <input type="text" placeholder="Buscar usuario..." class="search-box">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Rol Actual</th>
+            <th>Nuevo Rol</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carlos</td>
+            <td>Visitante</td>
+            <td>
+              <select>
+                <option>Visitante</option>
+                <option>Estudiante</option>
+                <option>Docente</option>
+              </select>
+            </td>
+            <td><button class="assign-btn">Asignar</button></td>
+          </tr>
+          <tr>
+            <td>María</td>
+            <td>Estudiante</td>
+            <td>
+              <select>
+                <option>Visitante</option>
+                <option selected>Estudiante</option>
+                <option>Docente</option>
+              </select>
+            </td>
+            <td><button class="assign-btn">Asignar</button></td>
+          </tr>
+          <tr>
+            <td>Luis</td>
+            <td>Docente</td>
+            <td>
+              <select>
+                <option>Visitante</option>
+                <option>Estudiante</option>
+                <option selected>Docente</option>
+              </select>
+            </td>
+            <td><button class="assign-btn">Asignar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+
+

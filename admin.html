@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Actividades</a></li>
+        <li><a href="#">Pagos</a></li>
+        <li><a href="#">Reportes</a></li>
+        <li><a href="#">Administración</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>Panel de Administración</h1>
+      <section class="role-section">
+        <h2>Control de Roles</h2>
+        <input type="text" id="searchInput" placeholder="Buscar usuario..." class="search-input" />
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Rol Actual</th>
+              <th>Nuevo Rol</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aquí se cargan los usuarios dinámicamente -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
+
+
